@@ -6,9 +6,13 @@ public class EmoticonsTeste {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         Emoticons emoticons = new Emoticons();
+
+        System.out.println("Digite uma mensagem: \n");
         String msg = read.nextLine();
         int upset =0;
         int funny =0;
+
+
 
         for(int i=0; i<msg.length(); i++){
             if (msg.substring(i).startsWith(emoticons.getUpset())) {
